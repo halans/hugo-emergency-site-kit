@@ -1,0 +1,12 @@
+{
+    "$schema": "https://deploy.workers.cloudflare.com/schema.json",
+    "name": "hugo-emergency-site-kit",
+    "type": "pages",
+    "pages": {
+        "build_command": "cd src && hugo --minify",
+        "build_output_directory": "src/public",
+        "environment_variables": {
+            "HUGO_VERSION": "0.147.7"
+        }
+    }
+}

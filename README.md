@@ -23,12 +23,16 @@ A lightweight, performant, and accessible Hugo theme for emergency information w
 
 ### Deploy to Cloudflare Pages
 
+[![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/halans/hugo-emergency-site-kit)
+
+Or manually:
+
 1. Fork this repository
 2. Go to [Cloudflare Pages](https://pages.cloudflare.com/)
 3. Connect your fork with these settings:
    - **Build command**: `cd src && hugo --minify`
    - **Output directory**: `src/public`
-   - **Environment variable**: `HUGO_VERSION` = `0.139.0`
+   - **Environment variable**: `HUGO_VERSION` = `0.147.7`
 
 ### Local Development
 
@@ -198,4 +202,4 @@ Create `assets/css/critical.css` in your site root to replace theme styles.
 
 MIT
 
-Created with Antigravity, using Hugo v0.147.7+extended
+Created with Antigravity, using [Hugo](https://gohugo.io) v0.147.7+extended+deploy
