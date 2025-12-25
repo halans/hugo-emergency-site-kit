@@ -1,0 +1,15 @@
+# Cloudflare Pages configuration
+name = "hugo-emergency-site-kit"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./src/public"
+
+# Build configuration for Pages
+[build]
+command = "cd src && hugo --minify"
+cwd = "."
+watch_dir = "src"
+
+[build.environment]
+HUGO_VERSION = "0.147.7"
