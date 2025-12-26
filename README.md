@@ -2,15 +2,6 @@
 
 A lightweight, performant, and accessible Hugo theme for emergency information websites. Designed to work under extreme conditions with poor connectivity.
 
-## Performance
-
-| Metric | Value |
-|--------|-------|
-| First load (gzipped) | **~3 KB** |
-| Total site size | **< 250 KB** |
-| JavaScript required | **0 KB** |
-| Build time | **< 20ms** |
-
 ## Features
 
 - ⚡ **< 14KB first load** — Fits in single TCP roundtrip
@@ -23,13 +14,12 @@ A lightweight, performant, and accessible Hugo theme for emergency information w
 
 ### Deploy to Cloudflare Pages
 
-[![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/halans/hugo-emergency-site-kit)
-
-Or manually:
 
 1. Fork this repository
 2. Go to [Cloudflare Pages](https://pages.cloudflare.com/)
-3. Connect your fork with these settings:
+3. Click **Create application** → **Pages** → **Connect to Git**
+4. Select your fork and configure:
+   - **Framework preset**: `Hugo`
    - **Build command**: `cd src && hugo --minify`
    - **Output directory**: `src/public`
    - **Environment variable**: `HUGO_VERSION` = `0.147.7`
@@ -187,6 +177,21 @@ Create `assets/css/critical.css` in your site root to replace theme styles.
 - ✓ Screen reader optimized
 - ✓ Reduced motion support
 - ✓ Print stylesheet
+
+---
+
+## Performance
+
+| Metric | Value |
+|--------|-------|
+| First load (gzipped) | **~3 KB** |
+| Total site size | **< 250 KB** |
+| JavaScript required | **0 KB** |
+| Build time | **< 20ms** |
+
+### Pagespeed Insights
+
+![Pagespeed Insights](docs/pagespeed-insights.jpg)
 
 ---
 

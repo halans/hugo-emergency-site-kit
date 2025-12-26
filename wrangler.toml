@@ -1,7 +1,0 @@
-# Cloudflare Pages configuration
-name = "hugo-emergency-site-kit"
-compatibility_date = "2024-01-01"
-pages_build_output_dir = "./src/public"
-
-[vars]
-HUGO_VERSION = "0.147.7"
